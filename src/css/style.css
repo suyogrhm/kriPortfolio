@@ -1,0 +1,28 @@
+body{
+    background: #000;
+}
+nav{
+    margin-top: 2rem;
+    position: sticky;
+}
+.navigationitems{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+    background: rgb(67, 66, 64);
+    width: 80%;
+    height: 2rem;
+    margin: 0 auto;
+    border-radius: 2rem;
+    padding-block: .75rem;
+    padding-inline: 3rem; 
+}
+.navigationitems li a{
+    color: #fff;
+    text-decoration: none;
+}
+#hometext a{
+    font-size: 32px;
+    font-weight: 600;
+}
