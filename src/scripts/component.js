@@ -23,10 +23,10 @@ class navBar extends HTMLElement {
         <nav>
             <ul class="navigationitems">
                 <li class="navigationlist" id="hometext"><a href="home.html">Kri</a></li>
-                <li class="navigationlist"><a href="about.html">About</a></li>
-                <li class="navigationlist"><a href="timeline.html">Timeline</a></li>
-                <li class="navigationlist"><a href="projects.html">Projects</a></li>
-                <li class="navigationlist"><a href="contact.html">Contact Me</a></li>
+                <li class="navigationlist"><a href="#">About</a></li>
+                <li class="navigationlist"><a href="#">Timeline</a></li>
+                <li class="navigationlist"><a href="#">Projects</a></li>
+                <li class="navigationlist"><a href="#">Contact Me</a></li>
             </ul>
         </nav>
     `
