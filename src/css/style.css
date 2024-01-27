@@ -244,7 +244,38 @@ ul li:nth-child(odd) div {
     height: 18px;
     width: 20px;
 }
+.custom-button-container {
+    text-align: center;
+}
 
+.custom-button-container a {
+    text-decoration: none;
+    color: #139AB8;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+button.custom-button {
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    background: #fff;
+    border: 1px solid #11111124;
+    box-shadow: 2px 2px 0px 1px #C5EDF6;
+    position: relative;
+}
+
+section#projects {
+    padding: 4rem 0rem;
+}
+button.custom-button::after {
+    content: "";
+    margin-left: 0.5rem;
+    background: url(../asset/images/card-images/arrow-right.svg) no-repeat;
+    position: absolute;
+    top: 22px;
+    height: 25px;
+    width: 25px;
+}
 /*  */
 footer {
     background: url(../asset/images/dotmetrics.png);

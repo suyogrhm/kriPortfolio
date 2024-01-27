@@ -232,6 +232,16 @@ class projectcards extends HTMLElement {
     }
 }
 
+class customButtons extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
+        <div class="custom-button-container">
+            <button class="custom-button"><a href="#">View More Projects</a></button>
+        </div>
+        `
+    }
+}
+
 // const navTemplate = document.createElement('template');
 // navTemplate.innerHTML = `
 //  <nav>
@@ -256,3 +266,4 @@ class projectcards extends HTMLElement {
 customElements.define('page-navbar', navBar);
 customElements.define('time-line', timeLine);
 customElements.define('project-cards', projectcards);
+customElements.define('custom-buttons', customButtons);
