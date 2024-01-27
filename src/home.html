@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kri</title>
     <link rel="stylesheet" href="./css/style.css">
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <script src="./scripts/timeline.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/69ce295b21.js" crossorigin="anonymous"></script> -->
 </head>
 
 <body>
@@ -15,21 +17,31 @@
     </header> -->
     <section class="cover-section">
         <div class="img-face">
-            <img
-              src="./asset/images/imagekri.png" data-img id="img-1" class="top-section-img show"/>
+            <img src="./asset/images/imagekri.png" data-img id="img-1" class="top-section-img show" />
         </div>
         <h1 class="nametext">Hi, I'm Kritin</h1>
-        <p class="aboutkri">A UX designer, currently working at GreedyGame. My passion lies in crafting designs that serve their purpose, emphasizing thorough research to ensure the products I create meet their objectives. I'm constantly driven by a desire to enhance my craft further. I'm eager to delve deeper into refining and improving my design skills, always seeking new ways to innovate and create designs that resonate and deliver exceptional user experiences.</p>
+        <p class="aboutkri">A UX designer, currently working at GreedyGame. My passion lies in crafting designs that
+            serve their purpose, emphasizing thorough research to ensure the products I create meet their objectives.
+            I'm constantly driven by a desire to enhance my craft further. I'm eager to delve deeper into refining and
+            improving my design skills, always seeking new ways to innovate and create designs that resonate and deliver
+            exceptional user experiences.</p>
     </section>
     <section class="home-page-nav"><page-navbar></page-navbar></section>
-    <section class="time-line" id="timeline"></section>
+    <section class="time-line" id="timeline">
+        <div>
+            <h2>Career Timeline</h2>
+        </div>
+        <time-line></time-line>
+    </section>
     <section class="projects-home" id="projects">
-        <div><h2>Projects</h2></div>
-        <div></div>
-        <div></div>
+        <div>
+            <h2>Projects</h2>
+        </div>
+        <project-cards></project-cards>
+        <div class="cards-tab-mobile"></div>
     </section>
     <footer>
-        <div class="contactme">
+        <div class="contactme" id="contact">
             <h2>Contact me</h2>
             <p>contact me at <a href="mailto:kritinvenugopal@gmail.com">kritinvenugopal@gmail.com</a></p>
             <div class="social">

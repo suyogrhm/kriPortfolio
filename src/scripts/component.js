@@ -24,12 +24,211 @@ class navBar extends HTMLElement {
             <ul class="navigationitems">
                 <li class="navigationlist" id="hometext"><a href="home.html">Kri</a></li>
                 <li class="navigationlist"><a href="#">About</a></li>
-                <li class="navigationlist"><a href="#">Timeline</a></li>
-                <li class="navigationlist"><a href="#">Projects</a></li>
-                <li class="navigationlist"><a href="#">Contact Me</a></li>
+                <li class="navigationlist"><a href="#timeline">Timeline</a></li>
+                <li class="navigationlist"><a href="#projects">Projects</a></li>
+                <li class="navigationlist"><a href="#contact">Contact Me</a></li>
             </ul>
         </nav>
     `
+    }
+}
+class timeLine extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
+        <div class="vertical-timeline">
+            <ul>
+                <li>
+                    <div>
+                        <time>2022-Present</time>
+                        <p class="work-title">UI Design</p>
+                        <p class="work-company-name">GreedyGame</p>  
+                        <p class="date-of-work">Feb'23-Present</p>  
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>2022</time>
+                        <p class="work-title">Graphic Design Intern</p>
+                        <p class="work-company-name">GreedyGame</p>
+                        <p class="date-of-work">Nov'22-Feb'23</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>2022</time>
+                        <p class="work-title">Product Design Intern</p>
+                        <p class="work-company-name">Alphamers</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>2020-22</time>
+                        <p class="work-title">Master's in Product Design</p>
+                        <p class="work-company-name">M S Ramaiah University of Applied Science</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>2021</time>
+                        <p class="work-title">Design Intern</p>
+                        <p class="work-company-name">Krot</p>  
+                        <p class="date-of-work">Aug'21-Nov'21</p>  
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>2019-20</time>
+                        <p class="work-title">User Experience Designer</p>
+                        <p class="work-company-name">Design Esthetics</p>  
+                        <p class="date-of-work">Sep'19-Mar'20</p>  
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>2016-19</time>
+                        <p class="work-title">Bachelor's in Vocational Studies</p>
+                        <p class="work-company-name">Digital Media and Animation</p>  
+                        <p class="date-of-work">St.Joseph's University</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>2018-19</time>
+                        <p class="work-title">Design Intern</p>
+                        <p class="work-company-name">The Wildfire Events</p>  
+                        <p class="date-of-work">Nov'18-Jan'19</p>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        `
+    }
+}
+class projectcards extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML =`
+            <div class="cards">
+            <div class="card">
+                <div class="card-img"><img src="./asset/images/card-images/empty-card.png" alt=""></div>
+                <div class="info-card-context">
+                    <div class="card-content">
+                        <h3>Unified Payment</h3>
+                        <h4>5th September 2022</h4>
+                    </div>
+                    <div class="card-details">
+                        <div class="card-info">
+                            <p>Case Study</p>
+                            <p>User Experience</p>
+                            <p>+2</p>
+                        </div>
+                        <div class="card-link">
+                            <button><a href="#">View Project</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img"><img src="./asset/images/card-images/imdb-card.png" alt=""></div>
+                <div class="info-card-context">
+                    <div class="card-content">
+                        <h3>IMDB Case Study</h3>
+                        <h4>5th September 2022</h4>
+                    </div>
+                    <div class="card-details">
+                        <div class="card-info">
+                            <p>Case Study</p>
+                            <p>User Experience</p>
+                            <p>+2</p>
+                        </div>
+                        <div class="card-link">
+                            <button><a href="#">View Project</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img"><img src="./asset/images/card-images/hamsak-card.png" alt=""></div>
+                <div class="info-card-context">
+                    <div class="card-content">
+                        <h3>Hamsak</h3>
+                        <h4>17th January 2022</h4>
+                    </div>
+                    <div class="card-details">
+                        <div class="card-info">
+                            <p>Case Study</p>
+                            <p>User Experience</p>
+                            <p>+2</p>
+                        </div>
+                        <div class="card-link">
+                            <button><a href="#">View Project</a></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img"><img src="./asset/images/card-images/signal-card.png" alt=""></div>
+                <div class="info-card-context">
+                    <div class="card-content">
+                        <h3>Sginal</h3>
+                        <h4>17th January 2022</h4>
+                    </div>
+                    <div class="card-details">
+                        <div class="card-info">
+                            <p>Case Study</p>
+                            <p>User Experience</p>
+                            <p>+2</p>
+                        </div>
+                        <div class="card-link">
+                            <button><a href="#">View Project</a></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img"><img src="./asset/images/card-images/coherence-card.png" alt=""></div>
+                <div class="info-card-context">
+                    <div class="card-content">
+                        <h3>Coherence</h3>
+                        <h4>31st March 2019</h4>
+                    </div>
+                    <div class="card-details">
+                        <div class="card-info">
+                            <p>Case Study</p>
+                            <p>User Experience</p>
+                            <p>+2</p>
+                        </div>
+                        <div class="card-link">
+                            <button><a href="#">View Project</a></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img"><img src="./asset/images/card-images/aer-card.png" alt=""></div>
+                <div class="info-card-context">
+                    <div class="card-content">
+                        <h3>AER</h3>
+                        <h4>31st March 2019</h4>
+                    </div>
+                    <div class="card-details">
+                        <div class="card-info">
+                            <p>Case Study</p>
+                            <p>User Experience</p>
+                            <p>+2</p>
+                        </div>
+                        <div class="card-link">
+                            <button><a href="#">View Project</a></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        `
     }
 }
 
@@ -55,3 +254,5 @@ class navBar extends HTMLElement {
 //     }
 // }
 customElements.define('page-navbar', navBar);
+customElements.define('time-line', timeLine);
+customElements.define('project-cards', projectcards);
