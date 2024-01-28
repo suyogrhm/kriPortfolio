@@ -24,9 +24,9 @@ class navBar extends HTMLElement {
             <ul class="navigationitems">
                 <li class="navigationlist" id="hometext"><a href="home.html">Kri</a></li>
                 <li class="navigationlist"><a href="#">About</a></li>
-                <li class="navigationlist"><a href="#timeline">Timeline</a></li>
-                <li class="navigationlist"><a href="#projects">Projects</a></li>
-                <li class="navigationlist"><a href="#contact">Contact Me</a></li>
+                <li class="navigationlist"><a href="file:///C:/Users/Suyog/Developer/git/kriPortfolio/src/home.html#timeline">Timeline</a></li>
+                <li class="navigationlist"><a href="file:///C:/Users/Suyog/Developer/git/kriPortfolio/src/home.html#projects">Projects</a></li>
+                <li class="navigationlist"><a href="file:///C:/Users/Suyog/Developer/git/kriPortfolio/src/home.html#contact">Contact Me</a></li>
             </ul>
         </nav>
     `
@@ -142,7 +142,7 @@ class projectcards extends HTMLElement {
                             <p>+2</p>
                         </div>
                         <div class="card-link">
-                            <button><a href="#">View Project</a></button>
+                            <button><a href="file:///C:/Users/Suyog/Developer/git/kriPortfolio/src/imdbcasestudy.html">View Project</a></button>
                         </div>
                     </div>
                 </div>
@@ -161,7 +161,7 @@ class projectcards extends HTMLElement {
                             <p>+2</p>
                         </div>
                         <div class="card-link">
-                            <button><a href="#">View Project</a></button>
+                            <button><a href="file:///C:/Users/Suyog/Developer/git/kriPortfolio/src/hamsak.html">View Project</a></button>
                         </div>
                     </div>
 
@@ -241,7 +241,15 @@ class customButtons extends HTMLElement {
         `
     }
 }
-
+class customBackButtons extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
+        <div class="custom-button-container back-button">
+            <button class="custom-button"><a href="file:///C:/Users/Suyog/Developer/git/kriPortfolio/src/home.html#projects">Back to Projects</a></button>
+        </div>
+        `
+    }
+}
 // const navTemplate = document.createElement('template');
 // navTemplate.innerHTML = `
 //  <nav>
@@ -267,3 +275,4 @@ customElements.define('page-navbar', navBar);
 customElements.define('time-line', timeLine);
 customElements.define('project-cards', projectcards);
 customElements.define('custom-buttons', customButtons);
+customElements.define('custom-back-buttons', customBackButtons);
