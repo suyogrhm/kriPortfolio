@@ -418,6 +418,6 @@ section{
 }
 @media only screen and (min-width: 1450px){
     .image-page-start::before {
-        left: -14rem;
+        left: -10rem;
     }
 }
