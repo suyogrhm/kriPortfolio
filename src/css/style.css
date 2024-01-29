@@ -10,6 +10,8 @@ html {
 
 body {
     margin: 0;
+    max-width: 1728px;
+    width: 100%;
 }
 h1{
     font-size: 48px;
@@ -395,29 +397,41 @@ section{
     transform: rotate(180deg);
 }
 /* case-study-2 */
-.image-page-start img {
+.image-page-start img, .image-page-end img{
     opacity: 0;
 }
-.image-page-start {
+.image-page-start, .image-page-end{
     position: relative;
 }
-.image-page-start::before {
+.image-page-start::before, .image-page-end::before {
     content: "";
-    background: url(../asset/images/hamsak-case-study/bike-color-front.png) no-repeat;
     z-index: 1;
     position: absolute;
     width: 100%;
     height: 100%;
-    left: -32px;
     background-size: contain;
+}
+.image-page-start::before{
+    background: url(../asset/images/hamsak-case-study/bike-color-front.png) no-repeat;
+    left: -32px;
+}
+.image-page-end::before{
+    background: url(../asset/images/hamsak-case-study/bike-color-back.png) no-repeat;
+    left: 9%;
 }
 @media only screen and (min-width: 1200px){
     .image-page-start::before {
         left: -9rem;
     }
+    .image-page-end::before{
+        left: 10rem;
+    }
 }
-@media only screen and (min-width: 1450px){
+@media only screen and (min-width: 1440px){
     .image-page-start::before {
         left: -10rem;
+    }
+    .image-page-end::before{
+        left: 12.2rem;
     }
 }
