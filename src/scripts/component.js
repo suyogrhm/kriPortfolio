@@ -231,7 +231,6 @@ class projectcards extends HTMLElement {
         `
     }
 }
-
 class customButtons extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
