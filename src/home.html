@@ -13,7 +13,7 @@
 
 <body class="home-page">
     <header id="home">
-        <section class="cover-section hero">
+        <section class="cover-section hero" id="about">
             <div class="img-face">
                 <img src="./asset/images/imagekri.png" data-img id="img-1" class="top-section-img show" />
             </div>
@@ -30,30 +30,28 @@
         </section>
     </header>
     <section class="home-page-nav"><page-navbar></page-navbar></section>
-
+    <section class="projects-home" id="projects">
+        <div>
+            <h2>Projects</h2>
+        </div>
+        <project-cards></project-cards>
+        <!-- <div class="cards-tab-mobile"></div> -->
+    </section>
     <section class="time-line" id="timeline">
         <div>
             <h2>Career Timeline</h2>
         </div>
         <time-line></time-line>
     </section>
-    <section class="projects-home" id="projects">
-        <div>
-            <h2>Projects</h2>
-        </div>
-        <project-cards></project-cards>
-        <custom-buttons></custom-buttons>
-        <!-- <div class="cards-tab-mobile"></div> -->
-    </section>
     <footer>
-        <div class="contactme" id="contact">
+        <section class="contactme" id="contact">
             <h2>Contact me</h2>
             <p>contact me at <a href="mailto:kritinvenugopal@gmail.com">kritinvenugopal@gmail.com</a></p>
             <div class="social">
                 <img src="./asset/images/behance.png" alt="Behance">
                 <img src="./asset/images/linkedin.png" alt="linkedin">
             </div>
-        </div>
+        </section>
     </footer>
     <script src="./scripts/component.js"></script>
 </body>

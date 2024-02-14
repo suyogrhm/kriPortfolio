@@ -22,11 +22,10 @@ class navBar extends HTMLElement {
         this.innerHTML =  `
         <nav id="navbar">
             <ul class="navigationitems">
-                <li class="navigationlist" id="hometext"><a href="home.html">Kri</a></li>
-                <li class="navigationlist"><a href="#">About</a></li>
-                <li class="navigationlist"><a href="file:///C:/Users/Suyog/Developer/git/kriPortfolio/src/home.html#timeline">Timeline</a></li>
-                <li class="navigationlist"><a href="file:///C:/Users/Suyog/Developer/git/kriPortfolio/src/home.html#projects">Projects</a></li>
-                <li class="navigationlist"><a href="file:///C:/Users/Suyog/Developer/git/kriPortfolio/src/home.html#contact">Contact Me</a></li>
+                <li class="navigationlist"><a href="#about">About</a></li>
+                <li class="navigationlist"><a href="#projects">Projects</a></li>
+                <li class="navigationlist"><a href="#timeline">Timeline</a></li>
+                <li class="navigationlist"><a href="#contact">Contact Me</a></li>
             </ul>
         </nav>
     `
@@ -108,127 +107,151 @@ class timeLine extends HTMLElement {
 class projectcards extends HTMLElement {
     connectedCallback() {
         this.innerHTML =`
-            <div class="cards">
-            <div class="card">
-                <div class="card-img"><img src="./asset/images/card-images/empty-card.png" alt=""></div>
-                <div class="info-card-context">
-                    <div class="card-content">
-                        <h3>Unified Payment</h3>
-                        <h4>5th September 2022</h4>
-                    </div>
-                    <div class="card-details">
-                        <div class="card-info">
-                            <p>Case Study</p>
-                            <p>User Experience</p>
-                            <p>+2</p>
-                        </div>
-                        <div class="card-link">
-                            <button><a href="#">View Project</a></button>
-                        </div>
-                    </div>
+        <div class="cards card-container">
+        <div class="card">
+            <div class="card-img"><img src="./asset/images/card-images/empty-card.png" alt=""></div>
+            <div class="info-card-context">
+                <div class="card-content">
+                    <h3>Unified Payment</h3>
+                    <h4>5th September 2022</h4>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-img"><img src="./asset/images/card-images/imdb-card.png" alt=""></div>
-                <div class="info-card-context">
-                    <div class="card-content">
-                        <h3>IMDB Case Study</h3>
-                        <h4>5th September 2022</h4>
+                <div class="card-details">
+                    <div class="card-info">
+                        <p>Case Study</p>
+                        <p>User Experience</p>
+                        <p>+2</p>
                     </div>
-                    <div class="card-details">
-                        <div class="card-info">
-                            <p>Case Study</p>
-                            <p>User Experience</p>
-                            <p>+2</p>
-                        </div>
-                        <div class="card-link">
-                            <button><a href="file:///C:/Users/Suyog/Developer/git/kriPortfolio/src/imdbcasestudy.html">View Project</a></button>
-                        </div>
+                    <div class="card-link">
+                        <button><a href="#">View Project</a></button>
                     </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-img"><img src="./asset/images/card-images/hamsak-card.png" alt=""></div>
-                <div class="info-card-context">
-                    <div class="card-content">
-                        <h3>Hamsak</h3>
-                        <h4>17th January 2022</h4>
-                    </div>
-                    <div class="card-details">
-                        <div class="card-info">
-                            <p>Case Study</p>
-                            <p>User Experience</p>
-                            <p>+2</p>
-                        </div>
-                        <div class="card-link">
-                            <button><a href="file:///C:/Users/Suyog/Developer/git/kriPortfolio/src/hamsak.html">View Project</a></button>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-img"><img src="./asset/images/card-images/signal-card.png" alt=""></div>
-                <div class="info-card-context">
-                    <div class="card-content">
-                        <h3>Sginal</h3>
-                        <h4>17th January 2022</h4>
-                    </div>
-                    <div class="card-details">
-                        <div class="card-info">
-                            <p>Case Study</p>
-                            <p>User Experience</p>
-                            <p>+2</p>
-                        </div>
-                        <div class="card-link">
-                            <button><a href="#">View Project</a></button>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-img"><img src="./asset/images/card-images/coherence-card.png" alt=""></div>
-                <div class="info-card-context">
-                    <div class="card-content">
-                        <h3>Coherence</h3>
-                        <h4>31st March 2019</h4>
-                    </div>
-                    <div class="card-details">
-                        <div class="card-info">
-                            <p>Case Study</p>
-                            <p>User Experience</p>
-                            <p>+2</p>
-                        </div>
-                        <div class="card-link">
-                            <button><a href="#">View Project</a></button>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-img"><img src="./asset/images/card-images/aer-card.png" alt=""></div>
-                <div class="info-card-context">
-                    <div class="card-content">
-                        <h3>AER</h3>
-                        <h4>31st March 2019</h4>
-                    </div>
-                    <div class="card-details">
-                        <div class="card-info">
-                            <p>Case Study</p>
-                            <p>User Experience</p>
-                            <p>+2</p>
-                        </div>
-                        <div class="card-link">
-                            <button><a href="#">View Project</a></button>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
-        `
+        <div class="card">
+            <div class="card-img"><img src="./asset/images/card-images/imdb-card.png" alt=""></div>
+            <div class="info-card-context">
+                <div class="card-content">
+                    <h3>IMDB Case Study</h3>
+                    <h4>5th September 2022</h4>
+                </div>
+                <div class="card-details">
+                    <div class="card-info">
+                        <p>Case Study</p>
+                        <p>User Experience</p>
+                        <p>+2</p>
+                    </div>
+                    <div class="card-link">
+                        <button><a href="file:///C:/Users/Suyog/Developer/git/kriPortfolio/src/imdbcasestudy.html">View
+                                Project</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="./asset/images/card-images/hamsak-card.png" alt=""></div>
+            <div class="info-card-context">
+                <div class="card-content">
+                    <h3>Hamsak</h3>
+                    <h4>17th January 2022</h4>
+                </div>
+                <div class="card-details">
+                    <div class="card-info">
+                        <p>Case Study</p>
+                        <p>User Experience</p>
+                        <p>+2</p>
+                    </div>
+                    <div class="card-link">
+                        <button><a href="file:///C:/Users/Suyog/Developer/git/kriPortfolio/src/hamsak.html">View
+                                Project</a></button>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="./asset/images/card-images/signal-card.png" alt=""></div>
+            <div class="info-card-context">
+                <div class="card-content">
+                    <h3>Sginal</h3>
+                    <h4>17th January 2022</h4>
+                </div>
+                <div class="card-details">
+                    <div class="card-info">
+                        <p>Case Study</p>
+                        <p>User Experience</p>
+                        <p>+2</p>
+                    </div>
+                    <div class="card-link">
+                        <button><a href="#">View Project</a></button>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="./asset/images/card-images/coherence-card.png" alt=""></div>
+            <div class="info-card-context">
+                <div class="card-content">
+                    <h3>Coherence</h3>
+                    <h4>31st March 2019</h4>
+                </div>
+                <div class="card-details">
+                    <div class="card-info">
+                        <p>Case Study</p>
+                        <p>User Experience</p>
+                        <p>+2</p>
+                    </div>
+                    <div class="card-link">
+                        <button><a href="#">View Project</a></button>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="./asset/images/card-images/aer-card.png" alt=""></div>
+            <div class="info-card-context">
+                <div class="card-content">
+                    <h3>AER</h3>
+                    <h4>31st March 2019</h4>
+                </div>
+                <div class="card-details">
+                    <div class="card-info">
+                        <p>Case Study</p>
+                        <p>User Experience</p>
+                        <p>+2</p>
+                    </div>
+                    <div class="card-link">
+                        <button><a href="#">View Project</a></button>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        <div class="card hidden">
+            <div class="card-img"><img src="./asset/images/card-images/aer-card.png" alt=""></div>
+            <div class="info-card-context">
+                <div class="card-content">
+                    <h3>AER</h3>
+                    <h4>31st March 2019</h4>
+                </div>
+                <div class="card-details">
+                    <div class="card-info">
+                        <p>Case Study</p>
+                        <p>User Experience</p>
+                        <p>+2</p>
+                    </div>
+                    <div class="card-link">
+                        <button><a href="#">View Project</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="custom-button-container">
+    <button class="custom-button" id="view-more-btn"><a>View More Projects</a></button>
+    </div>
+    `
     }
 }
 

@@ -27,3 +27,49 @@ document.addEventListener('DOMContentLoaded', function() {
 
   typeWriter();
 });
+
+// card section
+document.addEventListener('DOMContentLoaded', function() {
+  const viewMoreBtn = document.getElementById('view-more-btn');
+  const hiddenCards = document.querySelectorAll('.hidden');
+
+  viewMoreBtn.addEventListener('click', function() {
+    hiddenCards.forEach(card => {
+      card.classList.toggle('hidden');
+    });
+
+    if (viewMoreBtn.textContent === 'View More Projects') {
+      viewMoreBtn.textContent = 'View less';
+    } else {
+      viewMoreBtn.textContent = 'View More Projects';
+    }
+  });
+});
+// active link
+document.addEventListener('DOMContentLoaded', function() {
+  const sections = document.querySelectorAll('section');
+  const navLinks = document.querySelectorAll('#navbar ul li a');
+
+  window.addEventListener('scroll', function() {
+    let current = '';
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      // console.log("sectionTop", sectionTop);
+      const sectionHeight = section.clientHeight;
+      // console.log("sectionHeight", sectionHeight);
+      const scrollOnY = window.scrollY;
+      // console.log("scrollY", scrollY);
+      if (scrollOnY >= sectionTop - sectionHeight / 3) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href').slice(1) === current) {
+        link.classList.add('active');
+      }
+    });
+  });
+});

@@ -6,7 +6,9 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
 }
+
 .sticky {
     position: fixed;
     top: 0;
@@ -14,15 +16,20 @@ html {
     right: 0;
     z-index: 1000;
 }
+
 body {
     max-width: 1728px;
     width: 100%;
     margin: 0 auto;
     font-family: 'Inter', sans-serif;
 }
-h1{
+a.active {
+    color: #139AB8 !important; /* Customize as needed */
+  }
+h1 {
     font-size: 48px;
 }
+
 .home-page h2 {
     font-size: 36px;
     color: #139AB8;
@@ -33,10 +40,11 @@ h1{
     margin-top: 2rem;
     position: sticky;
 } */
-.home-page .navigationitems{
+.home-page .navigationitems {
     margin-top: unset;
     margin-bottom: 2rem;
 }
+
 .navigationitems {
     display: flex;
     align-items: center;
@@ -96,6 +104,7 @@ section#timeline {
     border-radius: 2rem;
     box-shadow: 8px 8px 0px 3px #C5EDF6;
 }
+
 .vertical-timeline ul {
     padding: 50px 0;
 }
@@ -108,6 +117,7 @@ section#timeline {
     margin: 0 auto;
     line-height: .25rem;
 }
+
 /* .vertical-timeline ul li::before {
     content: "";
     position: absolute;
@@ -128,6 +138,7 @@ section#timeline {
     transform: translateX(-50%);
     bottom: 50%;
 }
+
 .vertical-timeline ul li:nth-child(even)::after {
     background: #fff;
     border: 2px solid #139AB8;
@@ -157,11 +168,13 @@ section#timeline {
     display: block;
     margin-bottom: 10px;
 }
-.vertical-timeline p{
+
+.vertical-timeline p {
     color: #1a1a1a8f;
     font-size: 16px;
 }
-.vertical-timeline .work-title{
+
+.vertical-timeline .work-title {
     font-size: 20px;
     color: #1a1a1a9f;
     font-weight: 600;
@@ -200,14 +213,56 @@ ul li:nth-child(odd) div {
 
 /*  */
 /* projects */
-.cards {
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.card {
+    width: calc(50% - 10px);
+    /* Adjust for 2 cards per row on mobile */
+    margin-bottom: 20px;
+    margin-left: 20px;
+    box-sizing: border-box;
+}
+
+.card img {
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+    /* Initially hide additional cards */
+}
+#view-more-btn {
+    text-decoration: none;
+    color: #139AB8;
+    font-size: 18px;
+    font-weight: 900;
+}
+@media screen and (min-width: 768px) {
+    .card {
+        width: calc(31.5% - 10px);
+        /* Adjust for 3 cards per row on desktop */
+    }
+
+    .hidden:nth-child(n+7) {
+        display: none;
+        /* Hide cards beyond the 6th card on desktop */
+    }
+}
+
+/* .cards {
     display: grid;
     place-content: center;
     grid-template-columns: repeat(auto-fit, minmax(385px, 1fr));
     place-items: center;
     width: 80%;
     margin: 0 auto;
-}
+} */
 
 .card {
     box-shadow: 2px 2px 10px 0px #11111117;
@@ -259,6 +314,7 @@ ul li:nth-child(odd) div {
     height: 18px;
     width: 20px;
 }
+
 .custom-button-container {
     text-align: center;
 }
@@ -282,6 +338,7 @@ button.custom-button {
 section#projects {
     padding: 4rem 0rem;
 }
+
 button.custom-button::after {
     content: "";
     margin-left: 0.5rem;
@@ -291,13 +348,14 @@ button.custom-button::after {
     height: 25px;
     width: 25px;
 }
+
 /*  */
 footer {
     background: url(../asset/images/dotmetrics.png);
     text-align: center;
     display: flex;
     place-content: center;
-    margin-top: 1rem;
+    /* padding-bottom: 33rem; */
 }
 
 footer .contactme {
@@ -330,18 +388,22 @@ footer .contactme p a {
     width: 13%;
     margin-left: 2rem;
 }
+
 /* casae study imdb */
 .flex-section {
     text-align: justify;
     padding: 2rem;
     line-height: 1.2;
 }
-.flex-section img{
-    width:100%;
+
+.flex-section img {
+    width: 100%;
 }
-.content-section{
+
+.content-section {
     text-align: center;
 }
+
 .full-section-image {
     width: 80%;
     margin: 0 auto;
@@ -351,32 +413,41 @@ footer .contactme p a {
     width: 100%;
 }
 
-@media only screen and (min-width: 767px){
-    .flex-section-content p, .flex-section-content li{
+@media only screen and (min-width: 767px) {
+
+    .flex-section-content p,
+    .flex-section-content li {
         font-size: 24px;
         color: #1a1a1abd;
     }
-    .content-section p{
+
+    .content-section p {
         font-size: 24px;
     }
+
     h2 {
         font-size: 36px;
     }
+
     .flex-section {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
     }
+
     .flex-section-content p {
         max-width: 601px;
-        width:100%;
+        width: 100%;
     }
+
     p.bold {
         font-weight: 600;
     }
+
     .flex-section:nth-child(odd) .flex-section-image {
         order: 1;
     }
+
     .content-section p {
         width: 38%;
         margin: 0 auto;
@@ -384,16 +455,18 @@ footer .contactme p a {
 }
 
 /* end */
-section{
+section {
     overflow: hidden;
 }
+
 .back-button {
     text-align: left;
     margin-bottom: 1rem;
     margin-top: 2rem;
     margin-left: 2rem;
 }
-.back-button button.custom-button::after{
+
+.back-button button.custom-button::after {
     content: "";
     background: url(../asset/images/card-images/arrow-right.svg) no-repeat;
     position: absolute;
@@ -403,14 +476,20 @@ section{
     left: 0px;
     transform: rotate(180deg);
 }
+
 /* case-study-2 */
-.image-page-start img, .image-page-end img{
+.image-page-start img,
+.image-page-end img {
     opacity: 0;
 }
-.image-page-start, .image-page-end{
+
+.image-page-start,
+.image-page-end {
     position: relative;
 }
-.image-page-start::before, .image-page-end::before {
+
+.image-page-start::before,
+.image-page-end::before {
     content: "";
     z-index: 1;
     position: absolute;
@@ -418,27 +497,33 @@ section{
     height: 100%;
     background-size: contain;
 }
-.image-page-start::before{
+
+.image-page-start::before {
     background: url(../asset/images/hamsak-case-study/bike-color-front.png) no-repeat;
     left: -32px;
 }
-.image-page-end::before{
+
+.image-page-end::before {
     background: url(../asset/images/hamsak-case-study/bike-color-back.png) no-repeat;
     left: 9%;
 }
-@media only screen and (min-width: 1200px){
+
+@media only screen and (min-width: 1200px) {
     .image-page-start::before {
         left: -9rem;
     }
-    .image-page-end::before{
+
+    .image-page-end::before {
         left: 10rem;
     }
 }
-@media only screen and (min-width: 1440px){
+
+@media only screen and (min-width: 1440px) {
     .image-page-start::before {
         left: -10rem;
     }
-    .image-page-end::before{
+
+    .image-page-end::before {
         left: 12.2rem;
     }
 }
