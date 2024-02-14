@@ -20,13 +20,13 @@
 class navBar extends HTMLElement {
     connectedCallback() {
         this.innerHTML =  `
-        <nav>
+        <nav id="navbar">
             <ul class="navigationitems">
                 <li class="navigationlist" id="hometext"><a href="home.html">Kri</a></li>
                 <li class="navigationlist"><a href="#">About</a></li>
-                <li class="navigationlist"><a href="/src/home.html#timeline">Timeline</a></li>
-                <li class="navigationlist"><a href="/src/home.html#projects">Projects</a></li>
-                <li class="navigationlist"><a href="/src/home.html#contact">Contact Me</a></li>
+                <li class="navigationlist"><a href="file:///C:/Users/Suyog/Developer/git/kriPortfolio/src/home.html#timeline">Timeline</a></li>
+                <li class="navigationlist"><a href="file:///C:/Users/Suyog/Developer/git/kriPortfolio/src/home.html#projects">Projects</a></li>
+                <li class="navigationlist"><a href="file:///C:/Users/Suyog/Developer/git/kriPortfolio/src/home.html#contact">Contact Me</a></li>
             </ul>
         </nav>
     `
@@ -142,7 +142,7 @@ class projectcards extends HTMLElement {
                             <p>+2</p>
                         </div>
                         <div class="card-link">
-                            <button><a href="/src/imdbcasestudy.html">View Project</a></button>
+                            <button><a href="file:///C:/Users/Suyog/Developer/git/kriPortfolio/src/imdbcasestudy.html">View Project</a></button>
                         </div>
                     </div>
                 </div>
@@ -161,7 +161,7 @@ class projectcards extends HTMLElement {
                             <p>+2</p>
                         </div>
                         <div class="card-link">
-                            <button><a href="/src/hamsak.html">View Project</a></button>
+                            <button><a href="file:///C:/Users/Suyog/Developer/git/kriPortfolio/src/hamsak.html">View Project</a></button>
                         </div>
                     </div>
 
@@ -231,6 +231,7 @@ class projectcards extends HTMLElement {
         `
     }
 }
+
 class customButtons extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
@@ -244,14 +245,14 @@ class customBackButtons extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <div class="custom-button-container back-button">
-            <button class="custom-button"><a href="/src/home.html#projects">Back to Projects</a></button>
+            <button class="custom-button"><a href="file:///C:/Users/Suyog/Developer/git/kriPortfolio/src/home.html#projects">Back to Projects</a></button>
         </div>
         `
     }
 }
 // const navTemplate = document.createElement('template');
 // navTemplate.innerHTML = `
-//  <nav>
+//  <nav id="navbar">
 //     <ul class="navigationitems">
 //         <li class="navigationlist" id="hometext"><a href="http://home.html">Kri</a></li>
 //         <li class="navigationlist"><a href="http://about.html">About</a></li>

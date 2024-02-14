@@ -7,7 +7,13 @@
 html {
     scroll-behavior: smooth;
 }
-
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
 body {
     max-width: 1728px;
     width: 100%;

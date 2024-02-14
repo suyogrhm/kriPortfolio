@@ -1,33 +1,29 @@
-window.addEventListener("scroll", setScrollVar)
-window.addEventListener("resize", setScrollVar)
+window.addEventListener('scroll', function() {
+  const navbar = document.getElementById('navbar');
+  const heroHeight = document.querySelector('.hero').offsetHeight;
+  
+  // Check if scrolled past the hero section
+  if (window.scrollY > heroHeight) {
+    navbar.classList.add('sticky');
+  } else {
+    navbar.classList.remove('sticky');
+  }
+});
 
-function setScrollVar() {
-  const htmlElement = document.documentElement
-  const percentOfScreenHeightScrolled =
-    htmlElement.scrollTop / htmlElement.clientHeight
-  console.log(Math.min(percentOfScreenHeightScrolled * 100, 100))
-  htmlElement.style.setProperty(
-    "--scroll",
-    Math.min(percentOfScreenHeightScrolled * 100, 100)
-  )
-}
-
-setScrollVar()
-
-const observer = new IntersectionObserver(entries => {
-  for (let i = entries.length - 1; i >= 0; i--) {
-    const entry = entries[i]
-    if (entry.isIntersecting) {
-      document.querySelectorAll("[data-img]").forEach(img => {
-        img.classList.remove("show")
-      })
-      const img = document.querySelector(entry.target.dataset.imgToShow)
-      img?.classList.add("show")
-      break
+// typing animation script
+document.addEventListener('DOMContentLoaded', function() {
+  const text = "Hi, I'm Kritin"; // Text to be typed
+  const speed = 50; // Typing speed in milliseconds
+  const element = document.getElementById('typing-text');
+  
+  let i = 0;
+  function typeWriter() {
+    if (i < text.length) {
+      element.innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
     }
   }
-})
 
-document.querySelectorAll("[data-img-to-show]").forEach(section => {
-  observer.observe(section)
-})
+  typeWriter();
+});
