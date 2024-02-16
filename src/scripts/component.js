@@ -153,7 +153,7 @@ class projectcards extends HTMLElement {
                         <p>User Experience</p>
                     </div>
                     <div class="card-link">
-                        <button><a href="/kriPortfoliosrc/src/projects/moneyBip.html">View Project</a></button>
+                        <button><a href="/kriPortfolio/src/projects/moneyBip.html">View Project</a></button>
                     </div>
                 </div>
             </div>
@@ -171,7 +171,7 @@ class projectcards extends HTMLElement {
                         <p>User Experience</p>
                     </div>
                     <div class="card-link">
-                        <button><a href="/kriPortfoliosrc/src/projects/adtech.html">View Project</a></button>
+                        <button><a href="/kriPortfolio/src/projects/adtech.html">View Project</a></button>
                     </div>
                 </div>
             </div>
@@ -270,7 +270,7 @@ class customBackButtons extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <div class="custom-button-container back-button">
-            <button class="custom-button"><a href="/kriPortfolio/../index.html#projects">Back to Projects</a></button>
+            <button class="custom-button"><a href="/kriPortfolio/index.html#projects">Back to Projects</a></button>
         </div>
         `
     }
