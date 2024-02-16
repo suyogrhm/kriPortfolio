@@ -5,20 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kri</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="./scripts/script.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../scripts/script.js"></script>
+    <script src="../scripts/navInnerPage.js"></script>
 </head>
 
-<body class="adtech-page">
+<body class="projects adtech-page">
     <header>
-        <page-navbar></page-navbar>
+        <inner-page-navbar></inner-page-navbar>
     </header>
     <section class="less-margin-section">
         <custom-back-buttons></custom-back-buttons>
     </section>
     <section class="flex-section" id="flex-section-1">
         <div class="flex-section-image">
-            <img src="./asset/images/adtech/GG-logo.png" alt="GG-logo">
+            <img src="../asset/images/adtech/GG-logo.png" alt="GG-logo">
         </div>
         <div class="flex-section-content">
             <h1>Journey at GreedyGame</h1>
@@ -30,7 +31,7 @@
     </section>
     <section class="flex-section" id="flex-section-2">
         <div class="flex-section-image">
-            <img src="./asset/images/adtech/Problem-solving-pana.png" alt="Problem-solving-pana image">
+            <img src="../asset/images/adtech/Problem-solving-pana.png" alt="Problem-solving-pana image">
         </div>
         <div class="flex-section-content">
             <h2>Challenges</h2>
@@ -44,7 +45,7 @@
     </section>
     <section class="flex-section" id="flex-section-3">
         <div class="flex-section-image">
-            <img src="./asset/images/adtech/Website-designer-amico.png" alt="Website-designer-amico image">
+            <img src="../asset/images/adtech/Website-designer-amico.png" alt="Website-designer-amico image">
         </div>
         <div class="flex-section-content">
             <h2>My Role as a Designer</h2>
@@ -74,7 +75,7 @@
     </section>
     <section class="flex-section" id="flex-section-4">
         <div class="flex-section-image">
-            <img src="./asset/images/adtech/pupscale.png" alt="pupscale image">
+            <img src="../asset/images/adtech/pupscale.png" alt="pupscale image">
         </div>
         <div class="flex-section-content">
             <h2>Discovery</h2>
@@ -89,7 +90,7 @@
     </section>
     <section class="flex-section" id="flex-section-5">
         <div class="flex-section-image">
-            <img src="./asset/images/adtech/ins-image.png" alt="image">
+            <img src="../asset/images/adtech/ins-image.png" alt="image">
         </div>
         <div class="flex-section-content">
             <h2>Insights</h2>
@@ -105,11 +106,11 @@
         <h2>Ideation</h2>
         <p>To look at the complete website visit <a class="ext-link-color" href="www.pubscale.com ">www.pubscale.com
             </a> or feel free to reach out me. </p>
-        <img src="./asset/images/adtech/image-2.png" alt="image-2">
+        <img src="../asset/images/adtech/image-2.png" alt="image-2">
     </section>
     <section class="flex-section" id="flex-section-6">
         <div class="flex-section-image">
-            <img src="./asset/images/adtech/Holding.png" alt="holding-image">
+            <img src="../asset/images/adtech/Holding.png" alt="holding-image">
         </div>
         <div class="flex-section-content">
             <h2>Success Metric</h2>
@@ -130,8 +131,67 @@
             </div>
         </div>
     </section>
-    <custom-footer></custom-footer>
-    <script src="./scripts/component.js"></script>
+    <section class="view-projects-inner-page">
+        <h2>Other Projects That Might Interest You</h2>
+        <div class="card-section-innerPage">
+            <div class="card">
+                <div class="card-img"><img src="../asset/images/card-images/universalOtt-card.png" alt=""></div>
+                <div class="info-card-context">
+                    <div class="card-content">
+                        <h3>IMDB Case Study</h3>
+                        <h4>6th February 2024</h4>
+                    </div>
+                    <div class="card-details">
+                        <div class="card-info">
+                            <p>Case Study</p>
+                            <p>User Experience</p>
+                        </div>
+                        <div class="card-link">
+                            <button><a href="../projects/universalOtt.html">View Project</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img"><img src="../asset/images/card-images/aer-card.png" alt=""></div>
+                <div class="info-card-context">
+                    <div class="card-content">
+                        <h3>AER</h3>
+                        <h4>31st March 2019</h4>
+                    </div>
+                    <div class="card-details">
+                        <div class="card-info">
+                            <p>Case Study</p>
+                            <p>User Experience</p>
+                        </div>
+                        <div class="card-link">
+                            <button><a href="#">View Project</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img"><img src="../asset/images/card-images/hamsak-card.png" alt=""></div>
+                <div class="info-card-context">
+                    <div class="card-content">
+                        <h3>Hamsak</h3>
+                        <h4>17th January 2022</h4>
+                    </div>
+                    <div class="card-details">
+                        <div class="card-info">
+                            <p>Case Study</p>
+                            <p>User Experience</p>
+                        </div>
+                        <div class="card-link">
+                            <button><a href="../projects/hamsak.html">View
+                                    Project</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <custom-footer-inner-page></custom-footer-inner-page>
+    <script src="../scripts/component.js"></script>
 </body>
 
 </html>

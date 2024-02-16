@@ -45,30 +45,30 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
-// active link
-document.addEventListener('DOMContentLoaded', function() {
-  const sections = document.querySelectorAll('section');
-  const navLinks = document.querySelectorAll('#navbar ul li a');
+// active link switching
+document.addEventListener("DOMContentLoaded", function() {
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll("#navbar a");
 
-  window.addEventListener('scroll', function() {
-    let current = '';
+  window.addEventListener("scroll", function() {
+    let bottomOfViewport = window.scrollY + window.innerHeight;
+    let offset = window.innerHeight * 0.4; // 20% of the viewport height
 
     sections.forEach(section => {
-      const sectionTop = section.offsetTop;
-      // console.log("sectionTop", sectionTop);
-      const sectionHeight = section.clientHeight;
-      // console.log("sectionHeight", sectionHeight);
-      const scrollOnY = window.scrollY;
-      // console.log("scrollY", scrollY);
-      if (scrollOnY >= sectionTop - sectionHeight / 3) {
-        current = section.getAttribute('id');
-      }
-    });
+      let sectionTop = section.offsetTop;
+      let sectionBottom = sectionTop + section.offsetHeight;
 
-    navLinks.forEach(link => {
-      link.classList.remove('active');
-      if (link.getAttribute('href').slice(1) === current) {
-        link.classList.add('active');
+      if (
+        sectionTop < bottomOfViewport - offset &&
+        sectionBottom > window.scrollY + offset
+      ) {
+        navLinks.forEach(link => {
+          if (link.hash === "#" + section.id) {
+            link.classList.add("active");
+          } else {
+            link.classList.remove("active");
+          }
+        });
       }
     });
   });

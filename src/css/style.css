@@ -8,16 +8,23 @@ html {
     scroll-behavior: smooth;
     scroll-padding-top: 4rem;
 }
-
+nav{
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
 .sticky {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    margin-top: 0;
     z-index: 1000;
 }
 p{
     line-height: 1.4;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    color: #1a1a1abd;
 }
 body {
     max-width: 1728px;
@@ -61,6 +68,7 @@ h1 {
     border: .5px solid #1a1a1a1c;
     box-shadow: 5px 6px 0px #C5EDF6;
     margin-top: 2rem;
+    transition: all .5s ease-in-out;
 }
 
 .navigationitems li a {
@@ -100,12 +108,6 @@ section.cover-section p {
 }
 
 /* time line */
-section#timeline {
-    width: 60%;
-    margin: 8rem auto;
-    border-radius: 2rem;
-    box-shadow: 8px 8px 0px 3px #C5EDF6;
-}
 
 .vertical-timeline ul {
     padding: 50px 0;
@@ -394,7 +396,7 @@ footer .contactme p a {
 /* casae study imdb */
 .flex-section {
     text-align: justify;
-    padding: 2rem;
+    /* padding: 2rem; */
     line-height: 1.2;
 }
 
@@ -409,6 +411,7 @@ footer .contactme p a {
 .full-section-image {
     width: 80%;
     margin: 0 auto;
+    margin-bottom: 200px;
 }
 
 .full-section-image img {
@@ -465,7 +468,7 @@ section {
     text-align: left;
     margin-bottom: 1rem;
     margin-top: 2rem;
-    margin-left: 2rem;
+    margin-left: 10rem;
 }
 
 .back-button button.custom-button::after {
@@ -522,11 +525,11 @@ section {
 
 @media only screen and (min-width: 1440px) {
     .image-page-start::before {
-        left: -10rem;
+        left: -13rem;
     }
 
     .image-page-end::before {
-        left: 12.2rem;
+        left: 15rem;
     }
 }
 /* adtech page */
@@ -564,6 +567,7 @@ section {
     width: 80%;
     margin: 0 auto;
     text-align: center;
+    margin-bottom: 200px;
 }
 .flow-dragram-section img{
     width: 100%;
@@ -573,6 +577,9 @@ section {
 section.timeline-image {
     text-align: center;
 }
+section.timeline-image h2{
+    margin-bottom: 10rem;
+}
 section{
     margin-bottom: 200px;
 }
@@ -581,4 +588,74 @@ section{
 }
 .less-margin-section{
     margin-bottom: 50px;
+}
+.full-image-website{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 200px;
+}
+.full-image-website img{
+    width: 100%;
+}
+.view-projects-inner-page h2{
+    text-align: center;
+    margin-bottom: 4rem;
+    color: #139AB8;
+}
+.card-section-innerPage{
+    display: flex;
+    gap: 2em;
+    width: 80%;
+    margin: 0 auto;
+}
+.footerSection{
+    margin-bottom: 0;
+}
+/* nav scroll up animation */
+.nav-inner-page-fixed {
+    position: fixed;
+    margin-top: 0;
+    top: 0;
+    left: 0;
+    width: 100%; 
+  }
+  .nav-inner-page-fixed .navigationitems{
+    margin-top: 0;
+    width: 70%;
+  }
+  .hero{
+    margin-bottom: 180px;
+  }
+  /* signal page */
+  .section-with-background-image {
+    background: url('../asset/images/signal/watch-model-bg.png') no-repeat;
+    background-size: cover;
+    background-position: -50px 0;
+    height: 820px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-with-background-image p {
+    width: 50%;
+    padding-left: 4rem
+}
+.image-flex {
+    gap: 2em;
+    width: 80%;
+    margin: 0 auto;
+}
+.center-algin {
+    text-align: center;
+}
+
+.flex-div {
+    display: flex;
+    align-items: center;
+    gap: 5em;
+}
+
+.flex-div img {
+    width: 50%;
 }

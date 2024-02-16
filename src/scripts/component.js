@@ -22,9 +22,23 @@ class navBar extends HTMLElement {
         this.innerHTML =  `
         <nav id="navbar">
             <ul class="navigationitems">
-                <li class="navigationlist"><a href="../src/home.html#about">About</a></li>
-                <li class="navigationlist"><a href="../src/home.html#projects">Projects</a></li>
-                <li class="navigationlist"><a href="../src/home.html#timeline">Timeline</a></li>
+                <li class="navigationlist"><a href="#about">About</a></li>
+                <li class="navigationlist"><a href="#projects">Projects</a></li>
+                <li class="navigationlist"><a href="#timeline">Timeline</a></li>
+                <li class="navigationlist"><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    `
+    }
+}
+class navBarInner extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML =  `
+        <nav id="navbar">
+            <ul class="navigationitems">
+                <li class="navigationlist"><a href="../home.html">About</a></li>
+                <li class="navigationlist"><a href="../home.html#projects">Projects</a></li>
+                <li class="navigationlist"><a href="../home.html#timeline">Timeline</a></li>
                 <li class="navigationlist"><a href="#contact">Contact Me</a></li>
             </ul>
         </nav>
@@ -121,7 +135,7 @@ class projectcards extends HTMLElement {
                         <p>User Experience</p>
                     </div>
                     <div class="card-link">
-                        <button><a href="../src/universalOtt.html">View Project</a></button>
+                        <button><a href="../src/projects/universalOtt.html">View Project</a></button>
                     </div>
                 </div>
             </div>
@@ -139,7 +153,7 @@ class projectcards extends HTMLElement {
                         <p>User Experience</p>
                     </div>
                     <div class="card-link">
-                        <button><a href="../src/moneyBip.html">View Project</a></button>
+                        <button><a href="../src/projects/moneyBip.html">View Project</a></button>
                     </div>
                 </div>
             </div>
@@ -157,7 +171,7 @@ class projectcards extends HTMLElement {
                         <p>User Experience</p>
                     </div>
                     <div class="card-link">
-                        <button><a href="../src/adtech.html">View Project</a></button>
+                        <button><a href="../src/projects/adtech.html">View Project</a></button>
                     </div>
                 </div>
             </div>
@@ -175,7 +189,7 @@ class projectcards extends HTMLElement {
                     <p>User Experience</p>
                     </div>
                 <div class="card-link">
-                    <button><a href="#">View Project</a></button>
+                    <button><a href="../src/projects/signal.html">View Project</a></button>
                 </div>
             </div>
             </div>
@@ -214,7 +228,6 @@ class projectcards extends HTMLElement {
                         <button><a href="#">View Project</a></button>
                     </div>
                 </div>
-    
             </div>
         </div>
         <div class="card hidden">
@@ -230,11 +243,10 @@ class projectcards extends HTMLElement {
                     <p>User Experience</p>
                 </div>
                 <div class="card-link">
-                    <button><a href="../src/hamsak.html">View
+                    <button><a href="../src/projects/hamsak.html">View
                             Project</a></button>
                 </div>
             </div>
-
         </div>
     </div>
     </div>
@@ -258,7 +270,7 @@ class customBackButtons extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <div class="custom-button-container back-button">
-            <button class="custom-button"><a href="../src/home.html#projects">Back to Projects</a></button>
+            <button class="custom-button"><a href="../home.html#projects">Back to Projects</a></button>
         </div>
         `
     }
@@ -273,6 +285,22 @@ class footerCustom extends HTMLElement {
                 <div class="social">
                     <img src="./asset/images/behance.png" alt="Behance">
                     <img src="./asset/images/linkedin.png" alt="linkedin">
+                </div>
+            </section>
+        </footer>
+    `
+    }
+}
+class footerCustomInnerPage extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML =  `
+        <footer>
+            <section class="contactme" id="contact">
+                <h2>Contact me</h2>
+                <p>contact me at <a href="mailto:kritinvenugopal@gmail.com">kritinvenugopal@gmail.com</a></p>
+                <div class="social">
+                    <img src="../asset/images/behance.png" alt="Behance">
+                    <img src="../asset/images/linkedin.png" alt="linkedin">
                 </div>
             </section>
         </footer>
@@ -301,8 +329,10 @@ class footerCustom extends HTMLElement {
 //     }
 // }
 customElements.define('page-navbar', navBar);
+customElements.define('inner-page-navbar', navBarInner);
 customElements.define('time-line', timeLine);
 customElements.define('project-cards', projectcards);
 customElements.define('custom-buttons', customButtons);
 customElements.define('custom-back-buttons', customBackButtons);
 customElements.define('custom-footer', footerCustom);
+customElements.define('custom-footer-inner-page', footerCustomInnerPage);
