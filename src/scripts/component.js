@@ -141,7 +141,7 @@ class projectcards extends HTMLElement {
             </div>
         </div>
         <div class="card">
-            <div class="card-img"><img src="/kriPortfolio/src/asset/images/card-images/MoneyBip.png" alt=""></div>
+            <div class="card-img"><img src="src/asset/images/card-images/MoneyBip.png" alt=""></div>
             <div class="info-card-context">
                 <div class="card-content">
                     <h3>MoneyBip</h3>
@@ -153,13 +153,13 @@ class projectcards extends HTMLElement {
                         <p>User Experience</p>
                     </div>
                     <div class="card-link">
-                        <button><a href="../src/projects/moneyBip.html">View Project</a></button>
+                        <button><a href="/kriPortfoliosrc/projects/moneyBip.html">View Project</a></button>
                     </div>
                 </div>
             </div>
         </div>
         <div class="card">
-            <div class="card-img"><img src="/kriPortfolio/src/asset/images/card-images/gg-card.png" alt=""></div>
+            <div class="card-img"><img src="src/asset/images/card-images/gg-card.png" alt=""></div>
             <div class="info-card-context">
                 <div class="card-content">
                     <h3>Journey at GreedyGame</h3>
@@ -171,13 +171,13 @@ class projectcards extends HTMLElement {
                         <p>User Experience</p>
                     </div>
                     <div class="card-link">
-                        <button><a href="../src/projects/adtech.html">View Project</a></button>
+                        <button><a href="/kriPortfoliosrc/projects/adtech.html">View Project</a></button>
                     </div>
                 </div>
             </div>
         </div>
         <div class="card">
-        <div class="card-img"><img src="/kriPortfolio/src/asset/images/card-images/signal-card.png" alt=""></div>
+        <div class="card-img"><img src="src/asset/images/card-images/signal-card.png" alt=""></div>
         <div class="info-card-context">
             <div class="card-content">
                 <h3>Sginal</h3>
@@ -189,13 +189,13 @@ class projectcards extends HTMLElement {
                     <p>User Experience</p>
                     </div>
                 <div class="card-link">
-                    <button><a href="../src/projects/signal.html">View Project</a></button>
+                    <button><a href="/kriPortfolio/src/projects/signal.html">View Project</a></button>
                 </div>
             </div>
             </div>
         </div>
         <div class="card">
-        <div class="card-img"><img src="/kriPortfolio/src/asset/images/card-images/coherence-card.png" alt=""></div>
+        <div class="card-img"><img src="src/asset/images/card-images/coherence-card.png" alt=""></div>
         <div class="info-card-context">
             <div class="card-content">
                 <h3>Coherence</h3>
@@ -207,13 +207,13 @@ class projectcards extends HTMLElement {
                     <p>User Experience</p>
                 </div>
                 <div class="card-link">
-                    <button><a href="../src/projects/coherence.html">View Project</a></button>
+                    <button><a href="/kriPortfolio/src/projects/coherence.html">View Project</a></button>
                 </div>
             </div>
         </div>
         </div>
         <div class="card">
-            <div class="card-img"><img src="/kriPortfolio/src/asset/images/card-images/aer-card.png" alt=""></div>
+            <div class="card-img"><img src="src/asset/images/card-images/aer-card.png" alt=""></div>
             <div class="info-card-context">
                 <div class="card-content">
                     <h3>AER</h3>
@@ -225,13 +225,13 @@ class projectcards extends HTMLElement {
                         <p>User Experience</p>
                     </div>
                     <div class="card-link">
-                        <button><a href="../src/projects/aer.html">View Project</a></button>
+                        <button><a href="/kriPortfolio/src/projects/aer.html">View Project</a></button>
                     </div>
                 </div>
             </div>
         </div>
         <div class="card hidden">
-        <div class="card-img"><img src="/kriPortfolio/src/asset/images/card-images/hamsak-card.png" alt=""></div>
+        <div class="card-img"><img src="src/asset/images/card-images/hamsak-card.png" alt=""></div>
         <div class="info-card-context">
             <div class="card-content">
                 <h3>Hamsak</h3>
@@ -243,7 +243,7 @@ class projectcards extends HTMLElement {
                     <p>User Experience</p>
                 </div>
                 <div class="card-link">
-                    <button><a href="../src/projects/hamsak.html">View
+                    <button><a href="/kriPortfolio/src/projects/hamsak.html">View
                             Project</a></button>
                 </div>
             </div>
@@ -270,7 +270,7 @@ class customBackButtons extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <div class="custom-button-container back-button">
-            <button class="custom-button"><a href="/../index.html#projects">Back to Projects</a></button>
+            <button class="custom-button"><a href="/kriPortfolio/../index.html#projects">Back to Projects</a></button>
         </div>
         `
     }
