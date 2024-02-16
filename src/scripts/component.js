@@ -273,6 +273,22 @@ class customBackButtons extends HTMLElement {
         `
     }
 }
+class footerCustom extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML =  `
+        <footer>
+            <section class="contactme" id="contact">
+                <h2>Contact me</h2>
+                <p>contact me at <a href="mailto:kritinvenugopal@gmail.com">kritinvenugopal@gmail.com</a></p>
+                <div class="social">
+                    <img src="./asset/images/behance.png" alt="Behance">
+                    <img src="./asset/images/linkedin.png" alt="linkedin">
+                </div>
+            </section>
+        </footer>
+    `
+    }
+}
 // const navTemplate = document.createElement('template');
 // navTemplate.innerHTML = `
 //  <nav id="navbar">
@@ -299,3 +315,4 @@ customElements.define('time-line', timeLine);
 customElements.define('project-cards', projectcards);
 customElements.define('custom-buttons', customButtons);
 customElements.define('custom-back-buttons', customBackButtons);
+customElements.define('custom-footer', footerCustom);

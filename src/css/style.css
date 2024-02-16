@@ -16,7 +16,9 @@ html {
     right: 0;
     z-index: 1000;
 }
-
+p{
+    line-height: 1.4;
+}
 body {
     max-width: 1728px;
     width: 100%;
@@ -526,4 +528,31 @@ section {
     .image-page-end::before {
         left: 12.2rem;
     }
+}
+/* adtech page */
+.number-list-div li{
+    line-height: 1.4;
+    margin-bottom: .25rem;
+}
+.ext-link-color{
+    color: #139AB8;
+    text-decoration: none;
+}
+.custom-p-margin-bottom p{
+    margin-bottom: 4rem;
+}
+.percent-div{
+    display: flex;
+    justify-content: space-between;
+}
+.percent-box .percent-number{
+    font-size: 36px;
+    font-weight: 600;
+    color: #126FED;
+}
+.adtech-page #flex-section-6 .flex-section-image{
+    order: 0;
+}
+.content-section {
+    margin-bottom: 7rem;
 }
