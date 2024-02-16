@@ -36,9 +36,9 @@ class navBarInner extends HTMLElement {
         this.innerHTML =  `
         <nav id="navbar">
             <ul class="navigationitems">
-                <li class="navigationlist"><a href="../home.html">About</a></li>
-                <li class="navigationlist"><a href="../home.html#projects">Projects</a></li>
-                <li class="navigationlist"><a href="../home.html#timeline">Timeline</a></li>
+                <li class="navigationlist"><a href="../index.html">About</a></li>
+                <li class="navigationlist"><a href="../index.html#projects">Projects</a></li>
+                <li class="navigationlist"><a href="../index.html#timeline">Timeline</a></li>
                 <li class="navigationlist"><a href="#contact">Contact Me</a></li>
             </ul>
         </nav>
@@ -270,7 +270,7 @@ class customBackButtons extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <div class="custom-button-container back-button">
-            <button class="custom-button"><a href="../home.html#projects">Back to Projects</a></button>
+            <button class="custom-button"><a href="../index.html#projects">Back to Projects</a></button>
         </div>
         `
     }
