@@ -153,7 +153,7 @@ class projectcards extends HTMLElement {
                         <p>User Experience</p>
                     </div>
                     <div class="card-link">
-                        <button><a href="/kriPortfoliosrc/projects/moneyBip.html">View Project</a></button>
+                        <button><a href="/kriPortfoliosrc/src/projects/moneyBip.html">View Project</a></button>
                     </div>
                 </div>
             </div>
@@ -171,7 +171,7 @@ class projectcards extends HTMLElement {
                         <p>User Experience</p>
                     </div>
                     <div class="card-link">
-                        <button><a href="/kriPortfoliosrc/projects/adtech.html">View Project</a></button>
+                        <button><a href="/kriPortfoliosrc/src/projects/adtech.html">View Project</a></button>
                     </div>
                 </div>
             </div>
