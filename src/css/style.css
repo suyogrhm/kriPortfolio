@@ -26,8 +26,6 @@ nav {
 p {
     line-height: 1.4;
     font-family: 'Inter', sans-serif;
-    font-size: 24px;
-    color: #1a1a1abd;
 }
 
 body {
@@ -752,4 +750,8 @@ section {
 }
 .aer-website-image-margin{
     margin-bottom: 100px;
+}
+.section-with-background-image p{
+    font-size: 24px;
+    color: #1a1a1abd;
 }
