@@ -8,10 +8,12 @@ html {
     scroll-behavior: smooth;
     scroll-padding-top: 4rem;
 }
-nav{
+
+nav {
     transition: all 0.3s ease;
     margin-top: 20px;
 }
+
 .sticky {
     position: fixed;
     top: 0;
@@ -20,21 +22,26 @@ nav{
     margin-top: 0;
     z-index: 1000;
 }
-p{
+
+p {
     line-height: 1.4;
     font-family: 'Inter', sans-serif;
     font-size: 24px;
     color: #1a1a1abd;
 }
+
 body {
     max-width: 1728px;
     width: 100%;
     margin: 0 auto;
     font-family: 'Inter', sans-serif;
 }
+
 a.active {
-    color: #139AB8 !important; /* Customize as needed */
-  }
+    color: #139AB8 !important;
+    /* Customize as needed */
+}
+
 h1 {
     font-size: 48px;
 }
@@ -241,12 +248,14 @@ ul li:nth-child(odd) div {
     display: none;
     /* Initially hide additional cards */
 }
+
 #view-more-btn {
     text-decoration: none;
     color: #139AB8;
     font-size: 18px;
     font-weight: 900;
 }
+
 @media screen and (min-width: 768px) {
     .card {
         width: calc(31.5% - 10px);
@@ -408,8 +417,12 @@ footer .contactme p a {
     text-align: center;
 }
 
+.content-section h2 {
+    margin-bottom: 4rem;
+}
+
 .full-section-image {
-    width: 80%;
+    width: 82%;
     margin: 0 auto;
     margin-bottom: 200px;
 }
@@ -518,6 +531,10 @@ section {
         left: -9rem;
     }
 
+    .custom-postion {
+        margin-left: -5rem;
+    }
+
     .image-page-end::before {
         left: 10rem;
     }
@@ -532,107 +549,131 @@ section {
         left: 15rem;
     }
 }
+
 /* adtech page */
-.number-list-div li{
+.number-list-div li {
     line-height: 1.4;
     margin-bottom: .25rem;
 }
-.ext-link-color{
+
+.ext-link-color {
     color: #139AB8;
     text-decoration: none;
 }
-.custom-li-margin-bottom li{
+
+.custom-li-margin-bottom li {
     margin-bottom: .25rem;
     line-height: 1.4;
 }
-.custom-p-margin-bottom p{
+
+.custom-p-margin-bottom p {
     margin-bottom: 4rem;
 }
-.percent-div{
+
+.percent-div {
     display: flex;
     justify-content: space-between;
 }
-.percent-box .percent-number{
+
+.percent-box .percent-number {
     font-size: 36px;
     font-weight: 600;
     color: #126FED;
 }
-.adtech-page #flex-section-6 .flex-section-image{
+
+.adtech-page #flex-section-6 .flex-section-image {
     order: 0;
 }
-.reverse-order-flex:nth-child(odd) .flex-section-image{
+
+.reverse-order-flex:nth-child(odd) .flex-section-image {
     order: 0;
 }
-.flow-dragram-section{
-    width: 80%;
+
+.flow-dragram-section {
+    width: 82%;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 200px;
 }
-.flow-dragram-section img{
+
+.flow-dragram-section img {
     width: 100%;
     margin-bottom: 8rem;
     margin-top: 4rem;
 }
+
 section.timeline-image {
     text-align: center;
 }
-section.timeline-image h2{
+
+section.timeline-image h2 {
     margin-bottom: 10rem;
 }
-section{
+
+section {
     margin-bottom: 200px;
 }
-.hidden-section{
+
+.hidden-section {
     margin-bottom: 0;
 }
-.less-margin-section{
+
+.less-margin-section {
     margin-bottom: 50px;
 }
-.full-image-website{
+
+.full-image-website {
     width: 80%;
     margin: 0 auto;
     margin-bottom: 200px;
 }
-.full-image-website img{
+
+.full-image-website img {
     width: 100%;
 }
-.view-projects-inner-page h2{
+
+.view-projects-inner-page h2 {
     text-align: center;
     margin-bottom: 4rem;
     color: #139AB8;
 }
-.card-section-innerPage{
+
+.card-section-innerPage {
     display: flex;
     gap: 2em;
     width: 80%;
     margin: 0 auto;
 }
-.footerSection{
+
+.footerSection {
     margin-bottom: 0;
 }
+
 /* nav scroll up animation */
 .nav-inner-page-fixed {
     position: fixed;
     margin-top: 0;
     top: 0;
     left: 0;
-    width: 100%; 
-  }
-  .nav-inner-page-fixed .navigationitems{
+    width: 100%;
+}
+
+.nav-inner-page-fixed .navigationitems {
     margin-top: 0;
     width: 70%;
-  }
-  .hero{
+}
+
+.hero {
     margin-bottom: 180px;
-  }
-  /* signal page */
-  .section-with-background-image {
+}
+
+/* signal page */
+.section-with-background-image {
     background: url('../asset/images/signal/watch-model-bg.png') no-repeat;
     background-size: cover;
-    background-position: -50px 0;
+    background-position: 0;
     height: 820px;
-    width: 80%;
+    width: 82%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -641,11 +682,14 @@ section{
     width: 50%;
     padding-left: 4rem
 }
+
 .image-flex {
     gap: 2em;
-    width: 80%;
+    width: 82%;
     margin: 0 auto;
+    margin-bottom: 2rem;
 }
+
 .center-algin {
     text-align: center;
 }
@@ -658,4 +702,54 @@ section{
 
 .flex-div img {
     width: 50%;
+}
+
+/* coh inner page */
+.space-between-image {
+    gap: 8em;
+    margin-bottom: 200px;
+}
+
+.space-between-image img {
+    width: 616px;
+}
+
+.custom-bg {
+    background: #F2F2F2;
+    padding: 3rem 0;
+}
+
+@media only screen and (min-width: 1200px) {
+    .custom-image-opacity::after {
+        background: url('../asset/images/aer/color-shoes.png') no-repeat;
+        background-position: 0px 0;
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 7.5rem;
+    }
+
+    .custom-image-opacity img {
+        opacity: 0;
+    }
+
+    .custom-image-opacity {
+        position: relative;
+    }
+}
+
+.just-image-section {
+    text-align: center;
+}
+
+.custom-aer-image img {
+    width: 473px;
+}
+
+.custom-aer-image {
+    gap: 4em;
+}
+.aer-website-image-margin{
+    margin-bottom: 100px;
 }

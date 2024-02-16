@@ -207,7 +207,7 @@ class projectcards extends HTMLElement {
                     <p>User Experience</p>
                 </div>
                 <div class="card-link">
-                    <button><a href="#">View Project</a></button>
+                    <button><a href="../src/projects/coherence.html">View Project</a></button>
                 </div>
             </div>
         </div>
@@ -225,7 +225,7 @@ class projectcards extends HTMLElement {
                         <p>User Experience</p>
                     </div>
                     <div class="card-link">
-                        <button><a href="#">View Project</a></button>
+                        <button><a href="../src/projects/aer.html">View Project</a></button>
                     </div>
                 </div>
             </div>
