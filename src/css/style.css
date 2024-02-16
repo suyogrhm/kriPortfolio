@@ -538,6 +538,10 @@ section {
     color: #139AB8;
     text-decoration: none;
 }
+.custom-li-margin-bottom li{
+    margin-bottom: .25rem;
+    line-height: 1.4;
+}
 .custom-p-margin-bottom p{
     margin-bottom: 4rem;
 }
@@ -553,6 +557,28 @@ section {
 .adtech-page #flex-section-6 .flex-section-image{
     order: 0;
 }
-.content-section {
-    margin-bottom: 7rem;
+.reverse-order-flex:nth-child(odd) .flex-section-image{
+    order: 0;
+}
+.flow-dragram-section{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.flow-dragram-section img{
+    width: 100%;
+    margin-bottom: 8rem;
+    margin-top: 4rem;
+}
+section.timeline-image {
+    text-align: center;
+}
+section{
+    margin-bottom: 200px;
+}
+.hidden-section{
+    margin-bottom: 0;
+}
+.less-margin-section{
+    margin-bottom: 50px;
 }
