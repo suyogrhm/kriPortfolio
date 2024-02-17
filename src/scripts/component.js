@@ -36,9 +36,9 @@ class navBarInner extends HTMLElement {
         this.innerHTML = `
         <nav id="navbar">
             <ul class="navigationitems">
-                <li class="navigationlist"><a href="/../kriPortfolio/index.html">About Me</a></li>
-                <li class="navigationlist"><a href="/../kriPortfolio/index.html#projects">Projects</a></li>
-                <li class="navigationlist"><a href="/../kriPortfolio/index.html#timeline">Timeline</a></li>
+                <li class="navigationlist"><a href="/../kriPortfolio">About Me</a></li>
+                <li class="navigationlist"><a href="/../kriPortfolio/#projects">Projects</a></li>
+                <li class="navigationlist"><a href="/../kriPortfolio/#timeline">Timeline</a></li>
                 <li class="navigationlist"><a href="#contact">Contact Me</a></li>
             </ul>
         </nav>
