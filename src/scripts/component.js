@@ -254,9 +254,9 @@ class projectcards extends HTMLElement {
             </div>
         </a>
     </div>
-    <div class="card-out">
+    <div class="card-out hidden">
         <a href="/kriPortfolio/src/projects/hamsak.html">
-            <div class="card hidden">
+            <div class="card">
                 <div class="card-img"><img src="src/asset/images/card-images/hamsak-card.png" alt=""></div>
                 <div class="info-card-context">
                     <div class="card-content">
