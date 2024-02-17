@@ -22,7 +22,7 @@ class navBar extends HTMLElement {
         this.innerHTML = `
         <nav id="navbar">
             <ul class="navigationitems">
-                <li class="navigationlist"><a href="#about">About Me</a></li>
+                <li class="navigationlist"><a href="#">About Me</a></li>
                 <li class="navigationlist"><a href="#projects">Projects</a></li>
                 <li class="navigationlist"><a href="#timeline">Timeline</a></li>
                 <li class="navigationlist"><a href="#contact">Contact Me</a></li>
