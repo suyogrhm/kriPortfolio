@@ -758,3 +758,16 @@ section {
 .projects-home h2{
     margin-bottom: 6rem;
 }
+.cards a{
+    text-decoration: none;
+}
+.card h3, .card h4{
+    color: #1A1A1A;
+}
+.card-out .card{
+    width: 100%;
+    transition: all .3s ease-in-out;
+}
+.card-out:hover .card{
+    transform: scale(1.015);
+}
