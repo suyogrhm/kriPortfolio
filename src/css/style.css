@@ -771,3 +771,11 @@ section {
 .card-out:hover .card{
     transform: scale(1.015);
 }
+.contactme .social a img{
+    transition: all .3s ease-in-out;
+}
+.contactme .social a:hover img{
+    transform: scale(1.05);
+    box-shadow: 0 0 6px 1px #139AB8;
+    border-radius: 50%;
+}

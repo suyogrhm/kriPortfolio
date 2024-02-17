@@ -311,8 +311,8 @@ class footerCustom extends HTMLElement {
                 <h2>Contact me</h2>
                 <p>contact me at <a href="mailto:kritinvenugopal@gmail.com">kritinvenugopal@gmail.com</a></p>
                 <div class="social">
-                    <img src="src/asset/images/behance.png" alt="Behance">
-                    <img src="src/asset/images/linkedin.png" alt="linkedin">
+                <a href="https://www.behance.net/KritinV"><img src="src/asset/images/behance.png" alt="Behance"></a>
+                <a href="https://www.behance.net/KritinV"><img src="src/asset/images/linkedin.png" alt="linkedin"></a>
                 </div>
             </section>
         </footer>
@@ -327,8 +327,8 @@ class footerCustomInnerPage extends HTMLElement {
                 <h2>Contact me</h2>
                 <p>contact me at <a href="mailto:kritinvenugopal@gmail.com">kritinvenugopal@gmail.com</a></p>
                 <div class="social">
-                    <img src="../asset/images/behance.png" alt="Behance">
-                    <img src="../asset/images/linkedin.png" alt="linkedin">
+                    <a href="https://www.behance.net/KritinV"><img src="../asset/images/behance.png" alt="Behance"></a>
+                    <a href="https://www.behance.net/KritinV"><img src="../asset/images/linkedin.png" alt="linkedin"></a>
                 </div>
             </section>
         </footer>
