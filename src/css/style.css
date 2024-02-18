@@ -549,6 +549,33 @@ section {
 
 @media only screen and (min-width: 1440px) {
     .image-page-start::before {
+        left: -8rem;
+    }
+
+    .image-page-end::before {
+        left: 12rem;
+    }
+}
+@media only screen and (min-width: 1510px) {
+    .image-page-start::before {
+        left: -10rem;
+    }
+
+    .image-page-end::before {
+        left: 14rem;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .image-page-start::before {
+        left: -12rem;
+    }
+
+    .image-page-end::before {
+        left: 15rem;
+    }
+}
+@media only screen and (min-width: 1650px) {
+    .image-page-start::before {
         left: -13rem;
     }
 
@@ -790,4 +817,19 @@ section {
 }
 .timeline-image img {
     width: 80%;
+}
+.flex-render img{
+    padding: 2em;
+    width: 100%;
+}
+@media only screen and (min-width: 768px) {
+    .flex-render img{
+        padding: .5em;
+        width: 45%;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .flex-render img{
+        width: auto;
+    }
 }
