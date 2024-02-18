@@ -609,9 +609,10 @@ section {
 }
 
 .percent-box .percent-number {
-    font-size: 36px;
+    font-size: 64px;
     font-weight: 600;
     color: #126FED;
+    margin-bottom: 0;
 }
 
 .adtech-page #flex-section-6 .flex-section-image {
