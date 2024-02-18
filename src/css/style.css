@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 *,
 *::before,
 *::after {
@@ -610,7 +611,7 @@ section {
 
 .percent-box .percent-number {
     font-size: 64px;
-    font-weight: 600;
+    font-weight: 700;
     color: #126FED;
     margin-bottom: 0;
 }
@@ -835,4 +836,7 @@ section {
     .flex-render img{
         width: auto;
     }
+}
+p.percent-text {
+    margin-top: 0;
 }
