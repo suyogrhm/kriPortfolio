@@ -225,7 +225,7 @@ ul li:nth-child(odd) div {
 .card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 0 auto;
 }
 
@@ -272,7 +272,7 @@ ul li:nth-child(odd) div {
 }
 @media screen and (min-width: 1550px) {
     .card-container {
-        width: 80%;
+        width: 85%;
         /* Adjust for 2 cards per row on tablet */
     }
 }
