@@ -45,79 +45,6 @@ class navBarInner extends HTMLElement {
     `
     }
 }
-class timeLine extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = `
-        <div class="vertical-timeline">
-            <ul>
-                <li>
-                    <div>
-                        <time>2022-Present</time>
-                        <p class="work-title">UI Design</p>
-                        <p class="work-company-name">GreedyGame</p>  
-                        <p class="date-of-work">Feb'23-Present</p>  
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <time>2022</time>
-                        <p class="work-title">Graphic Design Intern</p>
-                        <p class="work-company-name">GreedyGame</p>
-                        <p class="date-of-work">Nov'22-Feb'23</p>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <time>2022</time>
-                        <p class="work-title">Product Design Intern</p>
-                        <p class="work-company-name">Alphamers</p>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <time>2020-22</time>
-                        <p class="work-title">Master's in Product Design</p>
-                        <p class="work-company-name">M S Ramaiah University of Applied Science</p>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <time>2021</time>
-                        <p class="work-title">Design Intern</p>
-                        <p class="work-company-name">Krot</p>  
-                        <p class="date-of-work">Aug'21-Nov'21</p>  
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <time>2019-20</time>
-                        <p class="work-title">User Experience Designer</p>
-                        <p class="work-company-name">Design Esthetics</p>  
-                        <p class="date-of-work">Sep'19-Mar'20</p>  
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <time>2016-19</time>
-                        <p class="work-title">Bachelor's in Vocational Studies</p>
-                        <p class="work-company-name">Digital Media and Animation</p>  
-                        <p class="date-of-work">St.Joseph's University</p>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <time>2018-19</time>
-                        <p class="work-title">Design Intern</p>
-                        <p class="work-company-name">The Wildfire Events</p>  
-                        <p class="date-of-work">Nov'18-Jan'19</p>
-                    </div>
-                </li>
-            </ul>
-
-        </div>
-        `
-    }
-}
 class projectcards extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
@@ -358,7 +285,6 @@ class footerCustomInnerPage extends HTMLElement {
 // }
 customElements.define('page-navbar', navBar);
 customElements.define('inner-page-navbar', navBarInner);
-customElements.define('time-line', timeLine);
 customElements.define('project-cards', projectcards);
 customElements.define('custom-buttons', customButtons);
 customElements.define('custom-back-buttons', customBackButtons);

@@ -226,7 +226,7 @@ ul li:nth-child(odd) div {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -758,7 +758,7 @@ section {
 .projects-home h2{
     margin-bottom: 6rem;
 }
-.cards a{
+.cards a , .card-out a{
     text-decoration: none;
 }
 .card h3, .card h4{
