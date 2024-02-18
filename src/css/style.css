@@ -755,12 +755,13 @@ section {
 
 @media only screen and (min-width: 1200px) {
     .custom-image-opacity::after {
-        background: url('../asset/images/aer/color-shoes.png') no-repeat;
+        background: url('../asset/images/aer/color-shoes-bg-remove-2x.png') no-repeat;
         background-position: 0px 0;
         content: '';
         width: 100%;
         height: 100%;
         position: absolute;
+        background-size: 100%;
         left: 7.5rem;
     }
 
