@@ -776,7 +776,9 @@ section {
 .just-image-section {
     text-align: center;
 }
-
+.just-image-section img {
+    width: 50%;
+}
 .custom-aer-image img {
     width: 473px;
 }
